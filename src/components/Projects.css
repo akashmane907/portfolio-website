@@ -1,0 +1,110 @@
+/* Projects.css */
+.projects-section {
+  padding: 5rem 2rem;
+  background-color: #0b0c10;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #66fcf1;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #242938; /* Darker background */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(33.333% - 2rem);
+  margin-bottom: 2rem;
+  color: white; /* Light text color */
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1.5rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff; /* Light text color */
+}
+
+.project-description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #ccc; /* Lighter text color */
+}
+
+.project-link {
+  text-decoration: none;
+  color: #1e90ff; /* Link color */
+  font-weight: bold;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+  color: #ff6347; /* Link hover color */
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: calc(50% - 1rem); /* Two cards per row */
+  }
+
+  .project-title {
+    font-size: 1.25rem; /* Adjusted font size for smaller screens */
+  }
+
+  .project-description {
+    font-size: 0.9rem; /* Adjusted font size for smaller screens */
+  }
+
+  .project-info {
+    padding: 1rem; /* Adjusted padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    width: 100%; /* Full width for each card */
+  }
+
+  .project-title {
+    font-size: 1.1rem; /* Further adjustment for very small screens */
+  }
+
+  .project-description {
+    font-size: 0.8rem; /* Further adjustment for very small screens */
+  }
+
+  .project-info {
+    padding: 0.75rem; /* Further adjustment for very small screens */
+  }
+}

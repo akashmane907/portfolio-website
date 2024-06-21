@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap");
+
 .App {
   text-align: center;
 }
@@ -21,7 +23,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #66fcf1;
 }
 
 .App-link {
@@ -34,5 +36,52 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-top: 80px;
+  background: #0b0c10; /* Adjust this based on your header height */
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  padding: 2rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 480px) {
+  main {
+    padding: 0.5rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  section {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
   }
 }

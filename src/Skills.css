@@ -1,0 +1,63 @@
+/* Skills.css */
+.skills-section {
+  padding: 5rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.skill-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  width: calc(25% - 2rem);
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.skill-name {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .skill-card {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-card {
+    width: 100%;
+  }
+}

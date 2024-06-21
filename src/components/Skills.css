@@ -1,0 +1,104 @@
+/* Skills.css */
+.skills-section {
+  padding: 5rem 2rem;
+  background-color: #0b0c10;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #66fcf1;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Reduced gap for smaller cards */
+  justify-content: center;
+}
+
+.skill-card {
+  background-color: #242938; /* Darker background */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(16.666% - 1.5rem); /* Smaller width */
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: white; /* Light text color */
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.skill-icon {
+  width: 50px; /* Smaller icon */
+  height: 50px; /* Smaller icon */
+  margin-bottom: 1rem;
+}
+
+.skill-name {
+  font-size: 1.1rem; /* Slightly smaller text */
+  color: #fff; /* Light text color */
+}
+
+@media (max-width: 900px) {
+  .skill-card {
+    width: calc(25% - 1.5rem); /* Adjusted width for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-card {
+    width: calc(33.333% - 1.5rem); /* Adjusted width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-card {
+    width: calc(25% - 0.5rem);
+    height: 2rem; /* Adjusted width for extra small screens */
+  }
+
+  .skills-title {
+    font-size: 2rem; /* Adjust title size for smaller screens */
+  }
+
+  .skill-icon {
+    width: 40px; /* Smaller icon */
+    height: 40px; /* Smaller icon */
+  }
+
+  .skill-name {
+    font-size: 0.8rem; /* Smaller text */
+  }
+  .skills-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Reduced gap for smaller cards */
+    justify-content: center;
+  }
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+  }
+  .skills-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Reduced gap for smaller cards */
+  }
+}

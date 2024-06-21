@@ -1,0 +1,157 @@
+/* Contact.css */
+.contact-section {
+  padding: 5rem 2rem;
+  background-color: #0b0c10;
+}
+
+.container-contact {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #66fcf1;
+}
+
+.contact-form {
+  background-color: #242938;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  box-sizing: border-box; /* Ensure the padding and border are included in the element's total width and height */
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.submit-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.1rem;
+  margin-top: 2rem;
+}
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+  gap: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.response-message {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #28a745; /* Green background for success */
+  border-radius: 4px;
+}
+
+.response-message.error {
+  background-color: #dc3545; /* Red background for error */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .submit-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .social-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .submit-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .response-message {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}
