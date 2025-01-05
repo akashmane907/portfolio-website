@@ -10,15 +10,11 @@ const About = () => {
         <div className="about-content">
           <img src={profileImage} alt="Profile" className="profile-image" />
           <div className="about-text">
-            <p>
-              Hi, I'm Akash Mane, a passionate web developer with a love for creating beautiful and functional websites. 
-              I specialize in front-end and Backend development and have experience with various web technologies.
-            </p>
-            <p>
-              In my free time, I enjoy exploring nature, photography, and learning new technologies. 
-              Feel free to browse through my projects and skills to know more about my work.
-            </p>
-           
+            
+<p> Hello! I’m Akash Mane, a software developer passionate about creating impactful solutions. Currently pursuing a Bachelor’s degree in Computer Engineering, I specialize in building intuitive web applications and solving real-world challenges using technologies like React.js, Next.js, MongoDB, and C/C++. I take pride in designing responsive interfaces and crafting efficient backend systems.
+Beyond coding, I’m driven by curiosity and inspired by challenges. When I’m not exploring new technologies, I enjoy reading, watching movies, and brainstorming innovative ideas. Let’s connect and bring great ideas to life! 🌟
+
+</p>
           </div>
           <div className="resume-download">
           <a href="/resume.pdf" download className="button">Download Resume</a>
